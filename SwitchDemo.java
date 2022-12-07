@@ -13,7 +13,6 @@ public class SwitchDemo {
             season = "Spring";
         }
 
-
         switch (month) {
         case 12:
         case 1:
