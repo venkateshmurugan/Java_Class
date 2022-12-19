@@ -6,7 +6,58 @@ public class PrintNumber {
         digits[1] = Integer.parseInt(args[0])/10; 
         digits[0] = Integer.parseInt(args[0])%10;
 
-        if(digits[1] == 1){
+
+        switch(digits[1])
+        {
+            case 0:
+                {
+                    switch(digits[0]){
+                        case 0:
+                        System.out.println("Zero");
+                        return;
+                    }
+                }
+
+            case 1:
+            {
+                switch (digits[0]){
+                    case 0:
+                    {
+                        System.out.println("Ten");
+                        return;
+                    }
+                    case 1:
+                    {
+                        System.out.println("Eleven");
+                        return;
+                    }
+                }
+                break;
+            }
+            case 2:
+            {
+                System.out.print("Twenty");
+                break;
+            }
+            case 3:
+            {
+                System.out.print("Thirty");
+                break;
+            }
+        }
+
+        switch(digits[0])
+        {
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+        }
+
+
+/*        if(digits[1] == 1){
             if(digits[0] == 0){
                 System.out.println("Ten");
             }
@@ -38,5 +89,6 @@ public class PrintNumber {
                 System.out.println("Nine");
              }
         }
+        */
     }
 }
